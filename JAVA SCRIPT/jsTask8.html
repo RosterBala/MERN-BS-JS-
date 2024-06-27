@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .error {
+            color: red;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration form</h2>
+        <form>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            <span class="error">POOR</span>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+            <span class="error">POOR</span>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error">POOR</span>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <span class="error">POOR</span>
+
+            <label for="confirmPassword">Re-enter Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <span class="error">POOR OR MISMATCH</span>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+            <span class="error">POOR</span>
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+            <span class="error">POCR</span>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+            <span class="error">POOR</span>
+
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required>
+            <span class="error">POOR</span>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Choose your country</option>
+                </select>
+
+            <label>Languages known:</label>
+            <input type="checkbox" id="english" name="languages" value="english">
+            <label for="english">English</label>
+            <input type="checkbox" id="kannada" name="languages" value="kannada">
+            <label for="kannada">Kannada</label>
+            <input type="checkbox" id="hindi" name="languages" value="hindi">
+            <label for="hindi">Hindi</label>
+            <input type="checkbox" id="telugu" name="languages" value="telugu">
+            <label for="telugu">Telugu</label>
+
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">Hereby I declare all the given details are true</label>
+
+            <button type="submit">REGISTER</button>
+        </form>
+        <p>Log in to <a href="#">Eslims</a> website</p>
+    </div>
+</body>
+</html>

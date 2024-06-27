@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Train Animation</title>
+</head>
+<body>
+  <img src="https://i.imgur.com/p2M8z5O.png" alt="Train Animation">
+  <p>Click the following buttons to handle animation</p>
+  <button id="start">Start</button>
+  <button id="stop">Stop</button>
+
+  <script>
+    const train = document.querySelector("img");
+    const startButton = document.getElementById("start");
+    const stopButton = document.getElementById("stop");
+    let animation;
+
+    startButton.addEventListener("click", () => {
+      animation = setInterval(() => {
+        const left = parseInt(train.style.left || "0") + 1;
+        train.style.left = `${left}px`;
+      }, 10);
+    });
+
+    stopButton.addEventListener("click", () => {
+      clearInterval(animation);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 1</title>
+</head>
+<body>
+
+    <h2> Click the Enter inputNumber button</h2>
+   
+<button onclick="delivary()"> Enter inputNumber</button><br>
+    <p id="demo"></p> 
+    <script>
+        function delivary(){
+            var inputNumber = prompt("Enter any inputNumber","enter only number")
+           if(inputNumber!=""){
+            let total = inputNumber.length;
+            let Cal = parseInt(inputNumber);
+        let i;
+        var gon=0;
+        
+            for( i =total; i>0;i--){
+           var sum;
+           sum = Cal % 10;        
+          Cal = Math.floor(Cal/10);
+         
+          gon = gon *10+ sum;
+          
+           }
+           document.getElementById('demo').innerHTML='The Expected Output:'+gon;
+        }
+    else{
+        document.write("empty Input will not be accepted")
+    }}
+        
+    </script>
+</body>
+</html>

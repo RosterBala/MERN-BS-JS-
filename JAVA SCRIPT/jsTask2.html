@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Enter any text </h2>
+    <button onclick="arrange()"> Enter Alfabet</button>
+<br><br>
+<p id="i1"></p>
+    <script>
+        function arrange(){
+        var letter = prompt("Enter any text","enter only String")
+        if(letter!="" ){
+       
+          
+            
+        var MakeArray = letter.split("")
+        console.log(MakeArray);
+        var Sorted = MakeArray.sort();
+ var CheckLetter= Sorted.join("")
+        console.log(Sorted) 
+document.getElementById('i1').innerHTML='Expected output :'+CheckLetter;
+        }
+    }
+    </script>
+
+
+</body>
+</html>
